@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    color: blue;
+}
+ul li {
+    color: rgba(0, 255, 0, 0.5);
+}
+.first {
+    color: #AA2244;
+}
+#second {
+    color: orange
+}
