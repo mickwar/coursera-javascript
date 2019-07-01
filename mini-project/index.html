@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Real fake filters</title>
+<link rel="stylesheet" href="style.css">
+
+<script type='text/javascript' src='http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js'></script>
+<script type="text/javascript" src='filters.js'></script>
+
+
+</head>
+
+
+<body>
+
+<div id="main">
+    <h1>Image filters</h1>
+
+    <div id="divcan">
+        <canvas id="elemcan"></canvas>
+    </div>
+
+    <div id="options">
+        <input type="file" multiple="false" accept="image/*" id="finput" oninput="upload()">
+        <br>
+        <br>
+        <p>Filters:</p>
+        <input type="button" id="btnreset" value="Reset" onclick="reset()">
+        <input type="button" id="btngray1" value="Gray 1" onclick="doGray1()">
+        <input type="button" id="btngray2" value="Gray 2" onclick="doGray2()">
+        <input type="button" id="btnnoise" value="Noise" onclick="doNoise()">
+        <input type="button" id="btnscramble" value="Scramble" onclick="doScramble()">
+        <input type="button" id="btnsmooth" value="Smooth" onclick="filterSmooth()">
+        <br>
+        <br>
+        <p id="scaleText">Scale: 100%</p>
+        <input type="range" id="scale" value=100 min=1 max=200 step="1" list="steplist"
+            onchange="displayRange()">
+        <datalist id="steplist">
+            <option>1</option>
+            <option>25</option>
+            <option>50</option>
+            <option>75</option>
+            <option>100</option>
+            <option>125</option>
+            <option>150</option>
+            <option>175</option>
+            <option>200</option>
+        </datalist>
+    </div>
+</div>
+
+</body>
+
+</html>
