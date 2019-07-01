@@ -1,0 +1,48 @@
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Hiding images</title>
+<!--<link rel="stylesheet" href="style.css">-->
+
+<script type='text/javascript' src='http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js'></script>
+<script type="text/javascript" src='func.js'></script>
+</head>
+
+<body>
+
+<div id="main">
+    <h1>Hiding images (same size)</h1>
+
+    <div id="divcan">
+        <canvas id="can0"></canvas>
+        <br>
+        <canvas id="can1"></canvas>
+        <br>
+        <canvas id="can2"></canvas>
+    </div>
+
+    <div id="options">
+        <table>
+            <tr>
+                <td>Base image</td>
+                <td>Image to hide</td>
+            </tr>
+            <tr>
+                <td><input type="file" multiple="false" accept="image/*"
+                    id="finput0" oninput="upload(0)"></td>
+                <td><input type="file" multiple="false" accept="image/*"
+                    id="finput1" oninput="upload(1)"></td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <input type="button" id="btnhide" value="Hide" onclick="hide()">
+        <input type="button" id="btnextract0" value="Extract from base" onclick="extract(0)">
+        <input type="button" id="btnextract1" value="Extract from hide" onclick="extract(1)">
+    </div>
+</div>
+
+</body>
+
+</html>
